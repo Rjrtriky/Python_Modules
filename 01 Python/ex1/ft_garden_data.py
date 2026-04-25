@@ -6,16 +6,19 @@
 #    By: rjuarez- <rjuarez-@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/23 21:29:41 by rjuarez-          #+#    #+#              #
-#    Updated: 2026/04/23 22:08:42 by rjuarez-         ###   ########.fr        #
+#    Updated: 2026/04/24 22:05:37 by rjuarez-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+#!/usr/bin/env python3
 
 class Plant:
         def __init__(self, name, height, age):
             self.name = name
             self.height = height
             self.age = age
-        def ft_print_plant(self) -> None:
+
+        def show(self) -> None:
               print(f"{self.name}: {self.height}cm, {self.age} days old")
 
 def main() -> None:
@@ -24,9 +27,9 @@ def main() -> None:
     plant_3 = Plant("Cactus", 15, 120)
     
     print("=== Garden Plant Registry ===")
-    plant_1.ft_print_plant()
-    plant_2.ft_print_plant()
-    plant_3.ft_print_plant()
+    plant_1.show()
+    plant_2.show()
+    plant_3.show()
 
 if __name__ == "__main__":
       main()
